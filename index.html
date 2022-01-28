@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #333;
+        }
+        table{
+            border-collapse: collapse;
+            border:1px solid #aaa;
+        }
+        td{
+            width: 24px;
+            height: 24px;
+            color:red;
+            text-align: center;
+            border:1px solid #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="f">帧编号；0</h3>
+    <h3 id="score">分数：0</h3>
+    <div id="app"></div>
+    <script src='js/Game.js'></script>
+    <script src="js/Snake.js"></script>
+    <script src='js/Food.js'></script>
+    <script>
+        var game = new Game();
+    </script>
+    <fieldset>
+        <legend>which color do you prefer?</legend>
+        <ul>
+            <li><input type="radio" value = "red" name = "color" id = "colorRed">
+                <label for="colorRed">Red</label></li>
+            <li><input type="radio" value = "green" name = "color" id = "colorGreen">
+                <label for="colorRed">Green</label></li>
+            <li><input type="radio" value = "blue" name = "color" id = "colorBlue">
+                <label for="colorRed">Blue</label></li>
+        </ul>
+    </fieldset>
+</body>
+
+</html>
